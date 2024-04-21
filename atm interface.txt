@@ -1,4 +1,4 @@
-package codesoft_project;
+//package codesoft_project;
 import java.util.Scanner;
 
      class BankAccount {
@@ -24,7 +24,7 @@ import java.util.Scanner;
     	 }
     	 
     	 public void withdraw(double amount) {
-    		 if (amount > 0 && amunt <= balance) {
+    		 if (amount > 0 && amount <= balance) {
     			 balance -= amount;
     			 System.out.println("Withdrawal successful. New balance: " + balance);
     		 } else {
@@ -64,13 +64,13 @@ import java.util.Scanner;
     				  checkBalance();
     				  break;
     			  case 2:
-    				  deposit();
+    				  deposit ();
     				  break;
     			  case 3:
     				  withdraw();
     				  break;
     			  case 4:
-    				  System.out.println("Thaunk you for using the ATM!");
+    				  System.out.println("Thank you for using the ATM!");
     				  break;
     			  default:
     				  System.out.println("Invalid choice. Please select a valid option.");
@@ -82,7 +82,7 @@ import java.util.Scanner;
     		  System.out.println("Your currnet balance is: " + account.getBalance());
     	  }
     	  
-    	  private void deosit() {
+    	  private void deposit() {
     		  System.out.println("Enter the amount to deposit: ");
     		  double amount = scanner.nextDouble();
     		  account.deposit(amount);
